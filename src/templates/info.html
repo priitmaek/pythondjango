@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>About</h1>
+<p>Oleme valmis nussima hehe</p>
+
+
+<p>
+    {{ my_text}}, {{ my_number}}
+    {{ my_slut}}
+</p>
+
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<ul>
+{% for abc in my_slut %}
+    {% if abc == 33 %}
+        <li>{{ abc|add:3 }}</li>
+    {% else %}
+        <li>{{ abc }}</li>
+    {% endif %}   
+{% endfor %}
+</ul>
+
+{% endblock %}
