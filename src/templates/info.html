@@ -2,11 +2,12 @@
 
 {% block content %}
 <h1>About</h1>
+<h3>{{ title|capfirst }}</h3>
 <p>Oleme valmis nussima hehe</p>
 
 
 <p>
-    {{ my_text}}, {{ my_number}}
+    {{ my_number}}
     {{ my_slut}}
 </p>
 
@@ -18,7 +19,7 @@
 <ul>
 {% for abc in my_slut %}
     {% if abc == 33 %}
-        <li>{{ abc|add:3 }}</li>
+        <li>{{ abc|add:37 }}</li>
     {% else %}
         <li>{{ abc }}</li>
     {% endif %}   

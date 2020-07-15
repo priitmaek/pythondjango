@@ -14,7 +14,7 @@ def contact_view(request, *args, **kwargs):
 
 def info_view(request, *args, **kwargs):
     my_contect = {
-        "my_text": "This is about me",
+        "title": "this is about me",
         "my_number": 5564322,
         "my_slut": [23423, 324324, 33]
     }
