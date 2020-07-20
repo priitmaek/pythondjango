@@ -6,6 +6,6 @@ class Product(models.Model):
     description = models.TextField(blank=True, null=True)
     price       = models.DecimalField(decimal_places=2, max_digits=300)
     summary     = models.TextField()
-    active      = models.BooleanField()
+    active      = models.BooleanField(default=True)
     male        = models.BooleanField(null=True)
     female      = models.BooleanField(default=True, null=True)
